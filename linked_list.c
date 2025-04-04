@@ -4,75 +4,75 @@
 
 struct list_node *new_node(size_t value) { 
 
-  struct list_node *new = malloc(sizeof(struct list_node));
-  new -> value = value;
-  new -> next = NULL; 
-  return new; 
+  // struct list_node *new = malloc(sizeof(struct list_node));
+  // new -> value = value;
+  // new -> next = NULL; 
+  // return new; 
 }
 
 void insert_at_head(struct linked_list *list, size_t value) {
-  struct list_node *new = new_node(value);
+  // struct list_node *new = new_node(value);
 
-  new -> next = list -> head;
+  // new -> next = list -> head;
 
-  return new;
+  // return new;
 
 }
 
 void insert_at_tail(struct linked_list *list, size_t value) {
 
-  if (list -> head == NULL)
-  {
-    list = list -> head;
-  }
+  // if (list -> head == NULL)
+  // {
+  //   list = list -> head;
+  // }
 
-  struct list_node *new_t = list -> head;
-  while((new_t -> next) != NULL)
-  {
-    new_t = new_t -> next;
-  }
+  // struct list_node *new_t = list -> head;
+  // while((new_t -> next) != NULL)
+  // {
+  //   new_t = new_t -> next;
+  // }
   
-  new_t -> next = new_node(value);
+  // new_t -> next = new_node(value);
 
 
 }
 
 size_t remove_from_head(struct linked_list *list) { 
 
-  struct list_node *q = list -> head;
-  struct list_node *p = list -> head;
+  // struct list_node *q = list -> head;
+  // struct list_node *p = list -> head;
 
-  p = q -> next;
-  list -> head = p;
-  free(q);
+  // p = q -> next;
+  // list -> head = p;
+  // free(q);
 }
 
 size_t remove_from_tail(struct linked_list *list) { 
 
-  struct list_node *q = list -> head;
-  struct list_node *p = list -> head;
+  // struct list_node *q = list -> head;
+  // struct list_node *p = list -> head;
   
-  while ((q -> next) != NULL)
-  {
-    p = q;
-    q = q -> next;
-  }
-  free(q);
-  if (p == NULL)
-  {
-    p -> next = NULL;
-  }
+  // while ((q -> next) != NULL)
+  // {
+  //   p = q;
+  //   q = q -> next;
+  // }
+  // free(q);
+  // if (p == NULL)
+  // {
+  //   p -> next = NULL;
+  // }
 
   return 0; }
 
 void free_list(struct linked_list list) {
 
-  struct list_node *free_l = list.head;
+  // struct list_node *free_l = list.head;
 
-  while (free_l != NULL)
-  {
-    free(free_l);
-  }
+  // while (free_l != NULL)
+  // {
+  //   free(free_l);
+  // }
 
 
 }
