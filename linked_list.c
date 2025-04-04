@@ -7,7 +7,8 @@ struct list_node *new_node(size_t value) {
   // struct list_node *new = malloc(sizeof(struct list_node));
   // new -> value = value;
   // new -> next = NULL; 
-  return new; 
+  // return new; 
+  return 0;
 }
 
 void insert_at_head(struct linked_list *list, size_t value) {
@@ -15,7 +16,7 @@ void insert_at_head(struct linked_list *list, size_t value) {
 
   // new -> next = list -> head;
 
-  return new;
+  // return new;
 
 }
 
